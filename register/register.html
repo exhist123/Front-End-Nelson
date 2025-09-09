@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+form{
+    width: 400px;
+    display: flex;
+    box-shadow: 0 4px 24px rgb(34, 14, 206);
+    padding: 30px 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    
+}
+legend{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+label{
+    font-size: 16px;
+    font-weight: 600px;
+}
+input{
+    padding: 8px 12px;
+    border-radius: 20px;
+    outline: none;
+    width: 100%;
+}
+input[type="email"],
+input[type="password"]{
+    border: 1px solid rgb(48, 20, 201);
+
+
+}
+input[type="submit"]{
+    border: none;
+    background-color: aquamarine;
+    transform: 2s;
+    color: #ccc;
+}
+input[type="submit"]{
+    background-color: blue;
+}
+p{
+    text-align: center;
+    font-size: 14px;
+
+}
+p a{
+    text-decoration: none;
+    margin-left: 5px;
+}
+p a:hover{
+    text-decoration: underline;
+}
+</style>
+<body>
+    <form action="">
+        <legend>Login</legend>
+        <label for="name">name</label>
+        <input type="text" name="name" id="name" placeholder="enter name">
+        <label for="email">email</label>
+        <input type="email" name="email" id="email" placeholder="enter email">
+        <label for="password">password</label>
+        <input type="password" name="password" id="password" placeholder="enter password">
+        <label for="confirm padding">confirm password</label>
+        <input type="confirm password" name="confirm password" id="confirm password" placeholder="confirm password">
+        <input type="submit" value="Login">
+        <hr>
+        <p>don't have a password yet? <a href="Login">Sign up</a></p>
+    </form>
+</body>
+</html>
